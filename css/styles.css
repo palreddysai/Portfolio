@@ -1,0 +1,13 @@
+:root {
+  --primaryColor: #fff;
+  --scondaryColor: #07a1b5;
+  --bgColor: #012429;
+}
+body {
+  background-color: var(--scondaryColor);
+  color: var(--primaryColor);
+  font-size: 14px;
+}
+nav {
+  background-color: var(--bgColor);
+}

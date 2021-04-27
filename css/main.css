@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+body {
+  background-color: #07a1b5;
+  color: #fff;
+  font-size: 0.875rem; }
+
+.header {
+  padding: 30px 0; }
+
+nav ul {
+  display: flex; }
+  nav ul li {
+    display: block; }
+    nav ul li:not(:nth-child(1)) {
+      padding-left: 2rem; }
+    nav ul li a {
+      color: #fff;
+      font-size: 1rem; }
+      nav ul li a:hover {
+        text-decoration: none;
+        color: #07a1b5; }
+
+/*# sourceMappingURL=main.css.map */
