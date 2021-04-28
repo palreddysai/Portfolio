@@ -1,0 +1,9 @@
+@mixin border {
+  border-radius: 10px;
+}
+@mixin border1 {
+  border-radius: 6px;
+}
+@mixin boxShadow {
+  box-shadow: 0px 0px 6px #000;
+}

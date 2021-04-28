@@ -25,9 +25,47 @@ nav {
         font-size: $f16;
         &:hover {
           text-decoration: none;
-          color: $scondaryColor;
+          color: $colorBlack;
         }
       }
+    }
+  }
+}
+.content {
+  a {
+    color: $scondaryColor;
+    background-color: $colorWhite;
+    padding: 6px 12px;
+    @include border1;
+
+    &:hover {
+      color: $colorBlack;
+      // background-color: $bgColor;
+      padding: 6px 12px;
+      @include border1;
+      @include boxShadow;
+      margin-left: 2px;
+      margin-top: 6px;
+      z-index: 9;
+    }
+  }
+}
+.photo {
+  @include border;
+}
+//contact me
+.contact-me {
+  background-color: $colorWhite;
+  color: $scondaryColor;
+  padding: 32px 0;
+}
+.social {
+  a {
+    color: $scondaryColor;
+    padding: 12px 6px;
+    font-size: $f24;
+    &:hover {
+      color: $colorBlack;
     }
   }
 }
