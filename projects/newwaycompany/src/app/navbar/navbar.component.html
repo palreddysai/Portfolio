@@ -1,0 +1,63 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar col-md-4 col-12">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../../assets/images/Newway%20company%20.png" class="img-fluid" alt="logo">
+                </a>
+            </nav>
+            <div class="menu col-md-8 col-12">
+                <ul>
+                    <li><a routerLink='/home'>home</a></li>
+                    <li><a routerLink='/about'>about</a></li>
+                    <li><a routerLink='/services'>services</a></li>
+                    <li><a routerLink='/projects'>project</a></li>
+                    <li><a routerLink='/blog'>blog</a></li>
+                    <li><a routerLink='/contact'>contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</header>
+
+<div class="chatBot" *ngIf="!show">
+    <!--Header-->
+    <div class="chatHead">
+        <h4>Hello..!</h4>
+    </div>
+    
+    <div class="chatBody">
+        <div class="default" >
+            <span>How can I help you?</span>
+            <!--
+            <div *ngIf="message.length">
+          <p *ngFor="let msg of defaultMessages">{{msg.message1}}</p> 
+            </div> -->           
+        </div>
+        <!--display message-->
+        <div class="receive" *ngIf="receive.length">
+            <p>{{receive}}</p>
+           
+        </div>
+    </div>
+    
+    <!--enter message to show -->
+    <div class="chatMessage">
+        <form class="inp" >
+            <input type="text" placeholder="Type a message" #msgrcvd >            
+            <button (click)="sendMsg(msgrcvd.value)"><i class="fa fa-paper-plane-o"></i></button>
+        </form>
+        
+        
+    </div>
+</div>
+
+<!--chai icon-->
+<div class="chatIcon">
+    <button (click)="toggleShow()">
+        <i class="fa fa-comments" aria-hidden="true" *ngIf="show"></i>
+        <i class="fa fa-times" aria-hidden="true" *ngIf="!show"></i>
+    </button>
+</div>
+

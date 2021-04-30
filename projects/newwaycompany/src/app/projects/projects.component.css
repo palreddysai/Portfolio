@@ -1,0 +1,49 @@
+.arrows{
+    display: flex;
+    justify-content: center;
+}
+.arrows a{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+.line{
+    width: 500px;
+}
+.portfolio a{
+    background-color: #e4551d;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px 5px;
+    
+}
+.project > .container{
+    border-bottom: 1px solid rgba(0,0,0,0.2); 
+}
+
+@media screen and (max-width:600px){
+    .line{
+    width: 60px;
+}
+}
+@media screen and (min-width: 760px){
+    
+.line{
+    width: 260px;
+}
+}
+
+@media screen and (min-width: 1024px){
+   
+.line{
+    width: 500px;
+}
+}

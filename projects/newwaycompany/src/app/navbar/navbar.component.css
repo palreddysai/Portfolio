@@ -1,0 +1,210 @@
+header{
+    padding: 15px 0;
+    background-color: #fff;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu ul li{
+    display: inline-block;
+    
+}
+.menu ul li:not(:last-child){
+    padding: 15px 50px 15px 0;
+}
+
+.menu ul li a {
+    display: block;
+    color: #637f83;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu ul li a:hover{
+    color: #e4551d;
+}
+
+/*chat-bot*/
+
+.chatIcon button{
+    position: fixed;
+    color: #e4551d;
+    bottom: 10px;
+    right: 50px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color:transparent;
+    border: none;
+    z-index: 9999;
+}
+.chatIcon button:hover{
+    transform: scale(1.2);
+}
+.chatBot{
+    position: fixed;
+    height: 500px;
+    width: 360px;
+    bottom: 80px;
+    right: 80px;
+    background-color:rgba(99,127,145,0.9);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #fff;
+    color: #fff;
+    z-index: 9999;
+    border: 1px solid #e4551d
+}
+.chatHead{
+    background-color: #e4551d;
+    height:50px;
+    padding: 10px 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.chatBody{
+    height: 396px;
+    
+}
+.default {
+    padding: 15px 10px;
+}
+.default img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.default span{
+    margin-left: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 12px;
+    
+}
+.default p{
+    margin-left: 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 14px;
+}
+.chatMessage{
+    height: 50px;   
+    
+}
+.chatMessage input{
+    width: 90%;
+    height: 100%;
+    padding: 15px 15px;
+    border: none;
+    border-bottom-left-radius: 10px;
+
+    
+}
+
+.chatMessage input:focus{
+    outline: none;
+}
+.chatMessage .inp button{
+    background-color: #fff;
+    width: 10%;
+    height: 100%;
+    border: none;
+    border-bottom-right-radius: 10px;
+    color: #000;
+    padding: 13px 0 12px 0;
+}
+.receive{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.receive p{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgba(254,160,30,0.6);
+    overflow: hidden;
+    font-size: 14px
+}
+
+
+@media screen and (max-width: 600px){
+    
+    .menu ul{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .menu ul li:not(:last-child){
+        padding: 15px 5px 15px 0;
+    } 
+    .menu ul li a{
+        font-size: 12px;
+    }
+    
+    /*chat-bot*/
+     .chatIcon button{    
+        bottom: 20px;
+        right: 30px;  
+    }
+    .chatBot{
+        height: 320px;
+        width: 260px;
+        bottom: 80px;
+        right: 40px;
+
+    }
+    .chatHead{
+        height: 50px;
+    }
+    .chatBody{
+        height: 218px;
+    }
+    .default p,.receive p{
+        font-size: 12px;
+    }
+    
+    .chatMessage .inp button{
+        padding: 12px 0 11px 0;
+    }
+    
+}
+
+
+@media screen and (min-width: 760px){
+    .menu ul li:not(:last-child){
+    padding: 15px 20px 15px 0;
+}
+}
+
+@media screen and (min-width: 1024px){
+    .menu ul li:not(:last-child){
+    padding: 15px 50px 15px 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

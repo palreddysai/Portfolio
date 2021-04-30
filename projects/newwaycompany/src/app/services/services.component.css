@@ -1,0 +1,39 @@
+.heading {
+    padding: 40px 0;
+    text-align: center;
+    
+}
+.heading h1{
+    font-weight: 700;
+    
+}
+.heading span{    
+    font-weight: 300;
+}
+
+.comp{
+    padding: 60px 48px;    
+    text-align: center;
+}
+.comp:not(:nth-child(4)){
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.comp img{
+    padding-bottom: 30px;
+}
+.comp h5{
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.comp p{
+    padding-bottom: 26px;
+    font-weight: 400;
+    font-size: 0.8125rem;
+}
+.comp a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #637f83;
+    padding: 10px 20px;
+    border-radius: 5px 5px;
+}

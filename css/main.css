@@ -19,7 +19,12 @@ body {
   font-size: 0.875rem; }
 
 .header {
-  padding: 30px 0; }
+  padding: 8px 0;
+  background-color: rgba(1, 36, 41, 0.2);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999; }
 
 nav ul {
   display: flex; }
@@ -30,6 +35,8 @@ nav ul {
     nav ul li a {
       color: #fff;
       font-size: 1rem; }
+      nav ul li a.activeLink {
+        color: #000; }
       nav ul li a:hover {
         text-decoration: none;
         color: #000; }
@@ -44,12 +51,24 @@ nav ul {
     padding: 6px 12px;
     border-radius: 6px;
     box-shadow: 0px 0px 6px #000;
-    margin-left: 2px;
-    margin-top: 6px;
     z-index: 9; }
 
 .photo {
-  border-radius: 10px; }
+  border-radius: 10px;
+  cursor: pointer; }
+  .photo:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 6px #fff, 0px 0px 4px #000; }
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000; }
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 2rem; }
 
 .contact-me {
   background-color: #fff;
@@ -61,6 +80,6 @@ nav ul {
   padding: 12px 6px;
   font-size: 1.5rem; }
   .social a:hover {
-    color: #000; }
+    color: #07a1b5; }
 
 /*# sourceMappingURL=main.css.map */

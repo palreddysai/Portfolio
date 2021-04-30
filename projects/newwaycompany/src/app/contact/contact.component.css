@@ -1,0 +1,52 @@
+.contact{
+    background-color: #637f83;
+    color: #fff;
+    position: relative;
+}
+.donec{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.enve{
+    font-size: 3rem;
+}
+.sub input,.sub button{
+    padding: 10px;
+    background-color: #597275;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.sub input{
+    width: 420px;
+    
+}
+.sub button{
+    margin-left: 10px;
+    padding: 8px 15px;
+    
+}
+.twitter{
+    background-color: #597275;
+}
+.twi{
+    font-size: 4rem;
+}
+
+/*media query*/
+@media screen and (max-width: 600px){
+    .news span{
+        font-size: 14px;
+    }
+    .news small{
+        font-size: 8px
+    }
+    .enve{
+        font-size: 3rem;
+    }
+   .sub input{
+       width: 320px;
+    
+    }   
+    
+   
+}

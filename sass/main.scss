@@ -9,9 +9,14 @@ body {
   font-size: $f14;
 }
 .header {
-  padding: 30px 0;
-  //background-color: $bgColor;
+  padding: 8px 0;
+  background-color: $bgColor;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
+
 nav {
   ul {
     display: flex;
@@ -23,6 +28,9 @@ nav {
       a {
         color: $colorWhite;
         font-size: $f16;
+        &.activeLink {
+          color: $colorBlack;
+        }
         &:hover {
           text-decoration: none;
           color: $colorBlack;
@@ -44,14 +52,30 @@ nav {
       padding: 6px 12px;
       @include border1;
       @include boxShadow;
-      margin-left: 2px;
-      margin-top: 6px;
       z-index: 9;
     }
   }
 }
 .photo {
   @include border;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 6px $colorWhite, 0px 0px 4px $colorBlack;
+  }
+}
+//projects
+.carousel-indicators {
+  li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $colorBlack;
+  }
+}
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: $f32;
 }
 //contact me
 .contact-me {
@@ -65,7 +89,17 @@ nav {
     padding: 12px 6px;
     font-size: $f24;
     &:hover {
-      color: $colorBlack;
+      color: $scondaryColor;
     }
   }
 }
+// #photo-image {
+//   background-image: url(../images/myphoto.jpg);
+//   position: fixed;
+//   top: 0;
+//   width: 50%;
+//   z-index: 0;
+//   height: 50%;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
