@@ -1,5 +1,5 @@
 // fontfamily
-$font: "Roboto", sans-serif;
+$font: "Poppins", sans-serif;
 
 //font-size
 $f12: 0.75rem; // 12px;
@@ -10,7 +10,16 @@ $f26: 1.625rem; // 26px;
 $f32: 2rem; //32px;
 
 // colors
-$colorWhite: #fff;
+$colorLightWhite: #f3f2ef;
+$colorWhite: #ffffff;
 $colorBlack: #000;
-$scondaryColor: #07a1b5;
-$bgColor: rgba(1, 36, 41, 0.2);
+$colorLightBlack: rgba(0, 0, 0, 0.7);
+$colorCyan: #07a1b5;
+
+/*
+:root {
+  --colorMain: #c0c0c0;
+  --brShadow: -6px 6px 15px rgba(0,0,0,0.5);
+  --tlShadow: 6px -6px 15px rgba(255,255,255,0.8);
+}
+*/

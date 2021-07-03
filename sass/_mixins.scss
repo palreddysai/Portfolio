@@ -1,9 +1,37 @@
-@mixin border {
+//borders
+@mixin border($color, $width) {
+  border: $color solid $width;
+}
+@mixin borderRadius {
   border-radius: 10px;
+}
+@mixin borderbtlftmrad {
+  border-bottom-left-radius: 6px;
 }
 @mixin border1 {
   border-radius: 6px;
 }
-@mixin boxShadow {
-  box-shadow: 0px 0px 6px #000;
+@mixin border-top($color, $width) {
+  border-top: $color solid $width;
+}
+@mixin border-right($color, $width) {
+  border-right: $color solid $width;
+}
+@mixin border-bottom($color, $width) {
+  border-bottom: $color solid $width;
+}
+@mixin border-left($color, $width) {
+  border-left: $color solid $width;
+}
+
+//box-shadow
+@mixin boxShadow($xaxis, $yaxis, $blurness, $color) {
+  box-shadow: $xaxis $yaxis $blurness $color;
+}
+
+//button
+@mixin button {
+  border: none;
+  padding: 6px 8px;
+  background-color: transparent;
 }

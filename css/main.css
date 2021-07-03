@@ -1,3 +1,10 @@
+/*
+:root {
+  --colorMain: #c0c0c0;
+  --brShadow: -6px 6px 15px rgba(0,0,0,0.5);
+  --tlShadow: 6px -6px 15px rgba(255,255,255,0.8);
+}
+*/
 * {
   margin: 0;
   padding: 0;
@@ -7,79 +14,152 @@ a,
 a:hover {
   text-decoration: none; }
 
-li {
+ul {
   list-style-type: none; }
 
-body {
-  font-family: "Roboto", sans-serif; }
+/*
+:root {
+  --colorMain: #c0c0c0;
+  --brShadow: -6px 6px 15px rgba(0,0,0,0.5);
+  --tlShadow: 6px -6px 15px rgba(255,255,255,0.8);
+}
+*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: "Poppins", sans-serif; }
 
-body {
-  background-color: #07a1b5;
-  color: #fff;
+.logo {
+  max-width: 20%; }
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%; }
+
+.nav-links a {
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #000; }
+
+.burger {
+  display: none;
+  cursor: pointer; }
+  .burger div {
+    width: 22px;
+    height: 3px;
+    margin: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all ease 0.3s; }
+    .burger div:nth-child(2) {
+      margin: 0 4px; }
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 50%; } }
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
+
+  .nav-links {
+    position: absolute;
+    top: 8vh;
+    right: 0px;
+    height: 30vh;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in; }
+    .nav-links li {
+      opacity: 0; }
+
+  .burger {
+    display: block; } }
+.nav-active {
+  transform: translateX(0%); }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px); }
+.toggle .line2 {
+  opacity: 0; }
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px); }
+
+.contact_heading {
+  text-align: center; }
+  .contact_heading h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+  .contact_heading small {
+    position: relative; }
+    .contact_heading small::after {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background-color: #232323;
+      right: -24px;
+      top: 50%;
+      position: absolute; }
+    .contact_heading small::before {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background-color: #232323;
+      left: -24px;
+      top: 50%;
+      position: absolute; }
+
+p.name_icon i {
+  font-size: 1.5rem; }
+
+p.get_in_name span {
+  font-size: 0.75rem; }
+
+.lble label {
+  font-size: 0.875rem; }
+.lble input {
+  height: 36px; }
+
+.sub_btn input {
+  width: 20%;
   font-size: 0.875rem; }
 
-.header {
-  padding: 8px 0;
-  background-color: rgba(1, 36, 41, 0.2);
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 999; }
+.social_links a {
+  font-size: 20px;
+  color: black;
+  margin: 5px; }
 
-nav ul {
-  display: flex; }
-  nav ul li {
-    display: block; }
-    nav ul li:not(:nth-child(1)) {
-      padding-left: 2rem; }
-    nav ul li a {
-      color: #fff;
-      font-size: 1rem; }
-      nav ul li a.activeLink {
-        color: #000; }
-      nav ul li a:hover {
-        text-decoration: none;
-        color: #000; }
-
-.content a {
-  color: #07a1b5;
-  background-color: #fff;
-  padding: 6px 12px;
-  border-radius: 6px; }
-  .content a:hover {
-    color: #000;
-    padding: 6px 12px;
-    border-radius: 6px;
-    box-shadow: 0px 0px 6px #000;
-    z-index: 9; }
-
-.photo {
-  border-radius: 10px;
-  cursor: pointer; }
-  .photo:hover {
-    transform: scale(1.01);
-    box-shadow: 1px 1px 6px #fff, 0px 0px 4px #000; }
-
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000; }
-
-.fa-chevron-left,
-.fa-chevron-right {
-  font-size: 2rem; }
-
-.contact-me {
-  background-color: #fff;
-  color: #07a1b5;
-  padding: 32px 0; }
-
-.social a {
-  color: #07a1b5;
-  padding: 12px 6px;
-  font-size: 1.5rem; }
-  .social a:hover {
-    color: #07a1b5; }
+.or {
+  padding-left: 60px; }
+  .or span {
+    position: relative; }
+    .or span::after {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background-color: #232323;
+      right: -30px;
+      top: 50%;
+      position: absolute; }
+    .or span::before {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background-color: #232323;
+      left: -30px;
+      top: 50%;
+      position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
