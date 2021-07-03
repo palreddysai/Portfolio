@@ -24,6 +24,9 @@ ul {
   --tlShadow: 6px -6px 15px rgba(255,255,255,0.8);
 }
 */
+body {
+  overflow-x: hidden; }
+
 nav {
   display: flex;
   justify-content: space-around;
