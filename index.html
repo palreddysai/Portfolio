@@ -19,99 +19,104 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html">
-                <img src="./images/logo.PNG" alt="logo" class="img-fluid">
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#education">education</a></li>
-            <li><a href="#work">work</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-    <section id="contact">
-        <div class="container py-3">
-            <div class="contact_heading pb-4">
-                <h3>Contact me</h3>
-                <small>get in touch</small>
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/logo.PNG" alt="logo" class="img-fluid">
+                </a>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <p class="get_in_touch font-weight-bold">Get in Touch</p>
-                    <div class=" row px-3">
-                        <p class="name_icon pt-3">
-                            <i class="fa fa-user"></i>
-                        </p>
-                        <p class="get_in_name pl-3"> <span>Name</span> <br>
-                            <small>Sai Kumar Palreddy</small>
-                        </p>
+            <ul class="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <section id="contact">
+            <div class="container py-3">
+                <div class="contact_heading pb-4">
+                    <h3>Contact me</h3>
+                    <small>get in touch</small>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p class="get_in_touch font-weight-bold">Get in Touch</p>
+                        <div class=" row px-3">
+                            <p class="name_icon pt-3">
+                                <i class="fa fa-user"></i>
+                            </p>
+                            <p class="get_in_name pl-3"> <span>Name</span> <br>
+                                <small>Sai Kumar Palreddy</small>
+                            </p>
+                        </div>
+                        <div class=" row px-3">
+                            <p class="name_icon pt-3">
+                                <i class="fa fa-map-marker"></i>
+                            </p>
+                            <p class="get_in_name pl-3"> <span>Address</span> <br>
+                                <small>Hyderabad, Telangana</small>
+                            </p>
+                        </div>
+                        <div class=" row px-3">
+                            <p class="name_icon pt-3">
+                                <i class="fa fa-envelope"></i>
+                            </p>
+                            <p class="get_in_name pl-3"> <span>Email</span> <br>
+                                <small>saikumar.palreddy@gmail.com</small>
+                            </p>
+                        </div>
+                        <p class="or"><span>Or</span> </p>
+                        <div class="social_links">
+                            <a href="https://www.linkedin.com/in/palreddy-sai-kumar-reddy/" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/palreddysai" target="_blank">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class=" row px-3">
-                        <p class="name_icon pt-3">
-                            <i class="fa fa-map-marker"></i>
-                        </p>
-                        <p class="get_in_name pl-3"> <span>Address</span> <br>
-                            <small>Hyderabad, Telangana</small>
-                        </p>
-                    </div>
-                    <div class=" row px-3">
-                        <p class="name_icon pt-3">
-                            <i class="fa fa-envelope"></i>
-                        </p>
-                        <p class="get_in_name pl-3"> <span>Email</span> <br>
-                            <small>saikumar.palreddy@gmail.com</small>
-                        </p>
-                    </div>
-                    <p class="or"><span>Or</span> </p>
-                    <div class="social_links">
-                        <a href="https://www.linkedin.com/in/palreddy-sai-kumar-reddy/" target="_blank">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://github.com/palreddysai" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
+                    <div class="col-12 col-md-6">
+                        <p class="message_me font-weight-bold">Message me</p>
+                        <form action="./contact.php" method="POST">
+                            <div class="row">
+                                <div class="form-group lble col-6">
+                                    <label for="fName">Full Name:</label>
+                                    <input type="text" name="fName" class="form-control"
+                                        placeholder="enter your name...">
+                                </div>
+                                <div class="form-group lble col-6">
+                                    <label for="email">Email:</label>
+                                    <input type="text" name="email" class="form-control"
+                                        placeholder="enter email id...">
+                                </div>
+                            </div>
+                            <div class="form-group lble">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" id="message" rows="2"
+                                    placeholder="message..!"></textarea>
+                            </div>
+                            <div class="text-center sub_btn">
+                                <input type="submit" name="email" class="form-control btn btn-info">
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <p class="message_me font-weight-bold">Message me</p>
-                    <form action="./contact.php" method="POST">
-                        <div class="row">
-                            <div class="form-group lble col-6">
-                                <label for="fName">Full Name:</label>
-                                <input type="text" name="fName" class="form-control" placeholder="enter your name...">
-                            </div>
-                            <div class="form-group lble col-6">
-                                <label for="email">Email:</label>
-                                <input type="text" name="email" class="form-control" placeholder="enter email id...">
-                            </div>
-                        </div>
-                        <div class="form-group lble">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" rows="2" placeholder="message..!"></textarea>
-                        </div>
-                        <div class="text-center sub_btn">
-                            <input type="submit" name="email" class="form-control btn btn-info">
-                        </div>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class=" text-center bg-dark text-white-50 p-3">
-            <h3>Sai Kumar Palreddy</h3>
-            <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyrights all rights reserved 2021</p>
-        </div>
-    </footer>
+        </section>
+        <footer>
+            <div class=" text-center bg-dark text-white-50 p-3">
+                <h3>Sai Kumar Palreddy</h3>
+                <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyrights all rights reserved 2021</p>
+            </div>
+        </footer>
+    </div>
 </body>
 <script src="./javascript/main.js"></script>
 
